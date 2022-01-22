@@ -13,7 +13,7 @@ const burgerSchema = new Schema({
     },
     temperature: {
         type: String,
-        enum: ['Rare', 'Medium-Rare', 'Medium', 'Well-Done'],
+        enum: ['None', 'Medium-Rare', 'Medium', 'Well-Done'],
       },
     cheese: {
         type: String,
@@ -22,6 +22,10 @@ const burgerSchema = new Schema({
     sauce: {
         type: String,
         enum: ['Ketchup', 'Mustard', 'Mayonaise', 'Sriracha', 'Hot Sauce', 'BBQ'],
+    },
+    toppings: {
+        type: String,
+        enum: ['Lettuce', 'Tomatoes', 'Raw Onions', 'Grilled Onions', 'Pickles', 'Bacon'],
     }
 })
 

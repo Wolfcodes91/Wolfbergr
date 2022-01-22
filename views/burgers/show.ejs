@@ -1,5 +1,20 @@
 <%- include('../partials/header') %>
 
-<h1>Burgers Page</h1>
+<section id="show-page">
+    <div>Burger Name: </div>
+    <div><%= burger.name %></div>
+    <div>Patty:</div>
+    <div><%= burger.patty %></div>
+    <div>Cheese: </div>
+    <div><%= burger.cheese %></div>
+    <div>Sauce: </div>
+    <div><%= burger.sauce %></div>
+    <div>Cheese: </div>
+    <div><%= burger.toppings %></div>
+    <div>Custom Ingredients: </div>
+    <ul>
+        <%= burger.ingredients %>
+    </ul>
+    </section>
   
 <%- include('../partials/footer') %>

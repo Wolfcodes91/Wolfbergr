@@ -21,18 +21,12 @@ function index(req, res) {
 }
 
 function show(req, res) {
-    Burger.findById(req.params.id)
-    .populate('ingredients')
-    .exec(function(err, burger) {
-      Ingredient.find(
-        // Query Object
-        {_id: {$nin: burger.ingredient}},
-        function(err, ingredients) {
-          res.render('burgers/show', { title: 'Burger Detail', burger, ingredients });
-        }
-      );
+    Burger.findById(req.params.id, function(err, burger) {
+      Ingredient.find({ burger: burger._id}, function(err, ingredients) {
+        res.render('burgers/show', {burger, ingredients});
+      });
     });
-}
+  };
 
 function newBurger(req, res) {
     res.render('burgers/new', { title: 'Add Burger' });

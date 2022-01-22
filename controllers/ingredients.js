@@ -7,13 +7,6 @@ module.exports = {
   addToIngredients,
 };
 
-function create(req, res) {
-    req.body.burger = req.params.id;
-    Ingredient.create(req.body, function(err, ingredient){
-        res.redirect(`/ingredients/${req.params.id}`)
-    });
-};
-
 function addToIngredients(req, res) {
     Burger.findById(req.params.burgerId, function(err, burger) {
       burger.ingredients.push(req.body.ingredientId);
@@ -22,6 +15,13 @@ function addToIngredients(req, res) {
       })
     })
   }
+
+  function create(req, res) {
+    req.body.burger = req.params.id;
+    Ingredient.create(req.body, function(err, ingredient){
+        res.redirect('/ingredients/new')
+    });
+};
 
   function newIngredient(req, res) {
     Ingredient.find({})
