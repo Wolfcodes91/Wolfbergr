@@ -3,8 +3,9 @@
 <h5>Custom Ingredients:</h5>
 <section id="badge-container">
   <% ingredients.forEach(function(i) { %>
-    <article class="badge"><%= i.name %></article>
+    <article class="badge"><%= i.name + ' ---- ' + i.position %></article>
   <% }) %>
+ 
 </section>
 
 <form id="add-ingredient-form" action="/ingredients" method="POST">

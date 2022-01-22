@@ -3,6 +3,12 @@
 <form id="new-form" action="/burgers" method="POST">
   <label>Name:</label>
   <input type="text" name="name">
+  <label>Bun:
+    <select name="bun">
+        <option value="Standard">Standard</option>
+        <option value="Gluten-Free">Gluten-Free</option>
+        <option value="Lettuce Wrap">Lettuce Wrap</option>
+    </select>
   <label>Patty:
     <select name="patty">
         <option value="Beef">Beef</option>
@@ -13,7 +19,7 @@
     </select>
     <label>Temperature (if Beef):</label>
   <select name="temperature">
-    <option value="None">None</option>
+    <option value="N/A">N/A</option>
     <option value="Medium-Rare">Medium-Rare</option>
     <option value="Medium">Medium</option>
     <option value="Well-Done">Well-Done</option>
@@ -40,19 +46,20 @@
   </label><br>
 
 <label>Toppings:</label>
-<select name="toppings">
-    <option value="None">None</option>
-    <option value="Lettuce">Lettuce</option>
-    <option value="Tomatoes">Tomatoes</option>
-    <option value="Raw Onions">Raw Onions</option>
-    <option value="Grilled Onions">Grilled Onions</option>
-    <option value="Pickles">Pickles</option>
-    <option value="Bacon">Bacon</option>
+    <input type="checkbox" value="None">None
+    <input type="checkbox" value="Lettuce">Lettuce
+    <input type="checkbox" value="Tomatoes">Tomatoes
+    <input type="checkbox" value="Raw Onions">Raw Onions
+    <input type="checkbox" value="Grilled Onions">Grilled Onions
+    <input type="checkbox" value="Pickles">Pickles
+    <input type="checkbox" value="Bacon">Bacon
 </select>
+
+<br>
 
 <label>Custom Ingredients:</label>
 <select name="ingredients">
-    
+
 </select>
 
 <input type="submit" value="Add Burger">

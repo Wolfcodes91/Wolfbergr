@@ -2,10 +2,10 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const ingredientSchema = new Schema({
-  name: '',
+  name: [''],
   position: {
       type: String,
-      enum: ['patty', 'cheese', 'sauce', 'toppings'],
+      enum: ['Bun', 'Patty', 'Cheese', 'Sauce', 'Toppings'],
   }
 });
 

@@ -7,13 +7,17 @@ const burgerSchema = new Schema({
         type: String,
         required: true
       },
+    bun: {
+        type: String,
+        enum: ['Standard', 'Gluten Free', 'Lettuce Wrap']
+    },
     patty: {
         type: String,
         enum: ['Beef', 'Chicken', 'Veggie', 'Black Bean', 'Impossible']
     },
     temperature: {
         type: String,
-        enum: ['None', 'Medium-Rare', 'Medium', 'Well-Done'],
+        enum: ['N/A', 'Medium-Rare', 'Medium', 'Well-Done'],
       },
     cheese: {
         type: String,
