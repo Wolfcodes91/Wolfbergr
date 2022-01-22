@@ -1,8 +1,10 @@
 const Burger = require('../models/burger');
+const Ingredient = require('../models/ingredient')
 
 module.exports = {
     index,
     show,
+    new: newBurger
 
 
 }
@@ -21,3 +23,7 @@ function index(req, res) {
 function show(req, res) {
 
 }
+
+function newBurger(req, res) {
+    res.render('burgers/new', { title: 'Add Burger' });
+  }

@@ -1,0 +1,18 @@
+<%- include('../partials/header') %>
+
+<form id="new-form" action="/burgers" method="POST">
+  <label>Name:</label>
+  <input type="text" name="name">
+  <label>Temperature</label>
+  <select name="temperature">
+    <option value="Rare">Rare</option>
+    <option value="Medium-Rare">Medium-Rare</option>
+    <option value="Medium">Medium</option>
+    <option value="Well-Done">Well-Done</option>
+  </select>
+  <label>Ingredients (separate ingredients with commas):</label>
+  <input type="text" name="ingredients">
+  <input type="submit" value="Add Burger">
+</form>
+
+<%- include('../partials/footer') %>
