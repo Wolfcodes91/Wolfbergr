@@ -30,7 +30,12 @@ const burgerSchema = new Schema({
     toppings: {
         type: String,
         enum: ['None', 'Lettuce', 'Tomatoes', 'Raw Onions', 'Grilled Onions', 'Pickles', 'Bacon'],
-    }
-})
+    },
+    user: {type: Schema.Types.ObjectId, ref: 'User'},
+        userName: String,
+        userAvatar: String,  
+    }, {
+    timestamps: true    
+});
 
 module.exports = mongoose.model('Burger', burgerSchema);

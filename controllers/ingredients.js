@@ -5,7 +5,19 @@ module.exports = {
   create,
   new: newIngredient,
   addToIngredients,
+  delete: deleteIngredient,
 };
+
+function deleteIngredient(req, res) {
+    Ingredient.findOne({'ingredients._id': req.params.id, 'ingredients.user': req.user._id})
+    .then(function(ingredient) {
+      if (!ingredient) return res.redirect('/ingredients/new');
+      ingredient.remove(req.params.id);
+    })
+    .then(function() {
+      res.redirect('/ingredients/new');
+    }); 
+  }
 
 function addToIngredients(req, res) {
     Burger.findById(req.params.burgerId, function(err, burger) {

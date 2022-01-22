@@ -7,18 +7,18 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <title>Burgers</title>
 </head>
-<body>
+<body> 
     <nav>
-        <nav><a href="/">Home</a></nav>
-        <a href="/burgers" <%- title === 'All Burgers' ? 'class="active"' : '' %>>All Burgers</a>
-        <% if (user) { %>
-          <a href="/burgers/new" <%- title === 'Add Burger' ? 'class="active"' : '' %>>Add Burger</a>
-          <a href="/ingredients/new" <%- title === 'Add Indgredients' ? 'class="active"' : '' %>>
-            Add Ingredients</a>
-          <a href="/logout">LOG OUT</a>
-        <% } else { %>
-          <a href="/auth/google" class="login">LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
-        <% } %>
-      </nav>
-      <main>
-        <h1><%- title %></h1>
+    <a href="/">Home</a></nav>
+    <a href="/burgers" <%- title === 'All Burgers' ? 'class="active"' : '' %>>All Burgers</a>
+    <% if (user) { %>
+        <a href="/burgers/new" <%- title === 'Add Burger' ? 'class="active"' : '' %>>Add Burger</a>
+        <a href="/ingredients/new" <%- title === 'Add Indgredients' ? 'class="active"' : '' %>>
+        Add Ingredients</a>
+        <a href="/logout">LOG OUT</a>
+     <% } else { %>
+        <a href="/auth/google" class="login">LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
+    <% } %>
+    </nav>
+    <main>
+    <h1><%- title %></h1>

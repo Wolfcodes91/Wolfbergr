@@ -12,4 +12,6 @@ router.get('/:id', burgersCtrl.show);
 
 router.post('/', isLoggedIn, burgersCtrl.create);
 
+router.delete('/:id', burgersCtrl.delete);
+
 module.exports = router;

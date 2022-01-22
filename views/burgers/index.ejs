@@ -10,10 +10,19 @@
     <tbody>
       <% burgers.forEach(function(b) { %>
         <tr>
+          <td class="burger-user"><img alt="avatar" src="<%= b.userAvatar %>"><%= b.userName %></td>
+          <td><%= b.createdAt %></td>
           <td><%= b.name %></td>
           <td><a href="/burgers/<%= b._id %>">Details</a></td>
-        </tr>
-        <% }); %>
+        <td>   
+        <% if (user) { %>
+            <form action="/burgers/:id<%= b._id %>?_method=DELETE" method="POST">
+              <button type="submit">Delete Burger</button>
+            </form>
+           <% } %>
+        </tr>  
+        </td>
+        <% }); %>  
       </tbody>
     </table>
 

@@ -6,7 +6,12 @@ const ingredientSchema = new Schema({
   position: {
       type: String,
       enum: ['Bun', 'Patty', 'Cheese', 'Sauce', 'Toppings'],
-  }
+  },
+  user: {type: Schema.Types.ObjectId, ref: 'User'},
+        userName: String,
+        userAvatar: String,  
+    }, {
+    timestamps: true   
 });
 
 module.exports = mongoose.model('Ingredient', ingredientSchema);

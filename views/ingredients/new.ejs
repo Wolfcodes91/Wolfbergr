@@ -4,6 +4,11 @@
 <section id="badge-container">
   <% ingredients.forEach(function(i) { %>
     <article class="badge"><%= i.name + ' ---- ' + i.position %></article>
+    <% if (user) { %>
+        <form action="/ingredients/<%= i._id %>?_method=DELETE" method="POST">
+          <button type="submit">Delete Ingredient</button>
+        </form>
+       <% } %>
   <% }) %>
  
 </section>
