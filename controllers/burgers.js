@@ -23,7 +23,7 @@ function index(req, res) {
 function show(req, res) {
     Burger.findById(req.params.id, function(err, burger) {
       Ingredient.find({ burger: burger._id}, function(err, ingredients) {
-        res.render('burgers/show', {burger, ingredients});
+        res.render('burgers/show', { title: 'Burger Detail', burger, ingredients })
       });
     });
   };

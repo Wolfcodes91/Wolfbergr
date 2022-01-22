@@ -25,7 +25,7 @@ const burgerSchema = new Schema({
     },
     toppings: {
         type: String,
-        enum: ['Lettuce', 'Tomatoes', 'Raw Onions', 'Grilled Onions', 'Pickles', 'Bacon'],
+        enum: ['None', 'Lettuce', 'Tomatoes', 'Raw Onions', 'Grilled Onions', 'Pickles', 'Bacon'],
     }
 })
 
