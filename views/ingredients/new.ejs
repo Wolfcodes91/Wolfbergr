@@ -1,5 +1,18 @@
 <%- include('../partials/header') %>
 
+<div>Before adding, please ensure that the Ingredient is not in the following list:</div>
+<section id="badge-container">
+  <% ingredients.forEach(function(i) { %>
+    <article class="badge"><%= i.name %></article>
+  <% }) %>
+</section>
 
+<form id="add-ingredient-form" action="/ingredients" method="POST">
+  <label>Name:</label>
+  <h5>Add your custom ingredient, and define it's position - (patty, cheese, sauce, topping)</h5>
+  <input type="text" placeholder="Ingredient" name="name">
+  <input type="text" placeholder="Position" name="position">
+  <input type="submit" value="Add Ingredient">
+</form>
 
 <%- include('../partials/footer') %>

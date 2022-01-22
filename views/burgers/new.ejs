@@ -3,16 +3,41 @@
 <form id="new-form" action="/burgers" method="POST">
   <label>Name:</label>
   <input type="text" name="name">
-  <label>Temperature</label>
+  <label>Patty:
+    <select name="patty">
+        <option value="Beef">Beef</option>
+        <option value="Chicken">Chicken</option>
+        <option value="Veggie">Veggie</option>
+        <option value="Black Bean">Black Bean</option>
+        <option value="Impossible">Impossible</option>
+    </select>
+    <label>Temperature (if Beef):</label>
   <select name="temperature">
     <option value="Rare">Rare</option>
     <option value="Medium-Rare">Medium-Rare</option>
     <option value="Medium">Medium</option>
     <option value="Well-Done">Well-Done</option>
   </select>
-  <label>Ingredients (separate ingredients with commas):</label>
-  <input type="text" name="ingredients">
+  </label><br>
+  <label>Cheese:</label>
+  <select name="cheese">
+    <option value="None">None</option>
+    <option value="Cheddar">Cheddar</option>
+    <option value="Swiss">Swiss</option>
+    <option value="Pepper Jack">Pepper Jack</option>
+    <option value="Bleu">Bleu</option>
+    <option value="American">American</option>
+</select>
+  </label><br>
+  <label>Sauce:</label>
+  <input type="checkbox" name="Ketchup">Ketchup
+  <input type="checkbox" name="Mustard">Mustard
+  <input type="checkbox" name="Mayonaise">Mayonaise
+  <input type="checkbox" name="Sriracha">Sriracha
+  <input type="checkbox" name="Hot Sauce">Hot Sauce
+  <input type="checkbox" name="BBQ">BBQ
   <input type="submit" value="Add Burger">
+  </label><br>
 </form>
 
 <%- include('../partials/footer') %>

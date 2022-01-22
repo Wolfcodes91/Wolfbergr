@@ -2,8 +2,11 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const ingredientSchema = new Schema({
-  name: {type: String, required: true, unique: true},
-  born: Date
+  name: '',
+  position: {
+      type: String,
+      enum: ['patty', 'cheese', 'sauce', 'toppings'],
+  }
 });
 
 module.exports = mongoose.model('Ingredient', ingredientSchema);
