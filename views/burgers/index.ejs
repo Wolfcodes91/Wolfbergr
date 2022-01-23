@@ -16,12 +16,12 @@
           <td><a href="/burgers/<%= b._id %>">Details</a></td>
         <td>   
         <% if (user) { %>
-            <form action="/burgers/:id<%= b._id %>?_method=DELETE" method="POST">
+            <form action="/burgers/<%= b._id %>?_method=DELETE" method="POST">
               <button type="submit">Delete Burger</button>
             </form>
            <% } %>
-        </tr>  
         </td>
+        </tr>  
         <% }); %>  
       </tbody>
     </table>

@@ -11,18 +11,15 @@ module.exports = {
 }
 
 function deleteBurger(req, res) {
-    Burger.findOne({'burgers._id': req.params.id, 'burgers.user': req.user._id})
-    .then(function(burger) {
-      if (!burger) return res.redirect('/burgers');
-      burger.remove(req.params.id);
-    })
-    .then(function() {
-      res.redirect('/burgers/');
-    }); 
-  }
+    Burger.findOneAndDelete(
+        {_id: req.params.id}, function(err) {
+            res.redirect('/burgers/');
+          }
+    )
+}
 
 function index(req, res) {
-    Burger.find({})
+    Burger.find({'burgers._id': req.params.id})
   .then(function(burgers) {
     res.render('burgers/index', { title: 'All Burgers', burgers });
   })
@@ -49,6 +46,7 @@ function newBurger(req, res) {
         req.body.user = req.user._id;
         req.body.userName = req.user.name;
         req.body.userAvatar = req.user.avatar;
+        burger.ingredients.push(req.body.ingredientId);
     });
     burger.save(function(err) {
     if (err) return res.redirect('/burgers/new');

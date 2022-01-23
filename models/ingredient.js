@@ -7,7 +7,7 @@ const ingredientSchema = new Schema({
       type: String,
       enum: ['Bun', 'Patty', 'Cheese', 'Sauce', 'Toppings'],
   },
-  user: {type: Schema.Types.ObjectId, ref: 'User'},
+  userId: {type: Schema.Types.ObjectId, ref: 'User'},
         userName: String,
         userAvatar: String,  
     }, {

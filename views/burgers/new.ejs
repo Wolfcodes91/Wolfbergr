@@ -36,16 +36,18 @@
 </select>
   </label><br>
   <label>Sauce:</label>
-  <input type="checkbox" name="Ketchup">Ketchup
-  <input type="checkbox" name="Mustard">Mustard
-  <input type="checkbox" name="Mayonaise">Mayonaise
-  <input type="checkbox" name="Sriracha">Sriracha
-  <input type="checkbox" name="Hot Sauce">Hot Sauce
-  <input type="checkbox" name="BBQ">BBQ
+  <select name="sauce"></select>
+  <input type="checkbox" value="Ketchup">Ketchup
+  <input type="checkbox" value="Mustard">Mustard
+  <input type="checkbox" value="Mayonaise">Mayonaise
+  <input type="checkbox" value="Sriracha">Sriracha
+  <input type="checkbox" value="Hot Sauce">Hot Sauce
+  <input type="checkbox" value="BBQ">BBQ
   
   </label><br>
 
 <label>Toppings:</label>
+<select name="toppings">
     <input type="checkbox" value="None">None
     <input type="checkbox" value="Lettuce">Lettuce
     <input type="checkbox" value="Tomatoes">Tomatoes
@@ -57,10 +59,7 @@
 
 <br>
 
-<label>Custom Ingredients:</label>
-<select name="ingredients">
 
-</select>
 
 <input type="submit" value="Add Burger">
 </form>

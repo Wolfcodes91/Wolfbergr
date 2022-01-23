@@ -31,11 +31,15 @@ const burgerSchema = new Schema({
         type: String,
         enum: ['None', 'Lettuce', 'Tomatoes', 'Raw Onions', 'Grilled Onions', 'Pickles', 'Bacon'],
     },
+    customIngredients: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Ingredient',
+    }],
     user: {type: Schema.Types.ObjectId, ref: 'User'},
         userName: String,
         userAvatar: String,  
     }, {
-    timestamps: true    
+    timestamps: true      
 });
 
 module.exports = mongoose.model('Burger', burgerSchema);

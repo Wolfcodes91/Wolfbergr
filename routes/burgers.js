@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var burgersCtrl = require('../controllers/burgers');
 var isLoggedIn = require('../config/auth');
-
+// starts with /burgers
 
 router.get('/', burgersCtrl.index);
 
@@ -12,6 +12,6 @@ router.get('/:id', burgersCtrl.show);
 
 router.post('/', isLoggedIn, burgersCtrl.create);
 
-router.delete('/:id', burgersCtrl.delete);
+router.delete('/:id', isLoggedIn, burgersCtrl.delete);
 
 module.exports = router;
