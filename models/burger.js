@@ -31,7 +31,7 @@ const burgerSchema = new Schema({
         type: String,
         enum: ['None', 'Lettuce', 'Tomatoes', 'Raw Onions', 'Grilled Onions', 'Pickles', 'Bacon'],
     },
-    customIngredients: [{
+    ingredients: [{
         type: Schema.Types.ObjectId,
         ref: 'Ingredient',
     }],

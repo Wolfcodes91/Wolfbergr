@@ -46,7 +46,17 @@ function newBurger(req, res) {
         req.body.user = req.user._id;
         req.body.userName = req.user.name;
         req.body.userAvatar = req.user.avatar;
-        burger.ingredients.push(req.body.ingredientId);
+        // req.body.toppings = !!req.body.toppings;
+        // req.body.sauce = !!req.body.sauce;
+        Burger.findById(req.params.id)
+        .populate('ingredients').exec(function(err, burger) {
+        Ingredient.find(
+            {_id: {$nin: burger.customIngredient}}, 
+            function(err, ingredients) {
+                res.render('burgers', { title: 'Burger', burger, ingredients });
+            }
+        )
+    });
     });
     burger.save(function(err) {
     if (err) return res.redirect('/burgers/new');
