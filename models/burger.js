@@ -24,12 +24,12 @@ const burgerSchema = new Schema({
         enum: ['None','Cheddar', 'Swiss', 'Pepper Jack', 'Bleu', 'American']
         },
     sauce: {
-        type: String,
+        type: [String],
         enum: ['Ketchup', 'Mustard', 'Mayonaise', 'Sriracha', 'Hot Sauce', 'BBQ'],
     },
     toppings: {
-        type: String,
-        enum: ['None', 'Lettuce', 'Tomatoes', 'Raw Onions', 'Grilled Onions', 'Pickles', 'Bacon'],
+        type: [String],
+        enum: ['Lettuce', 'Tomatoes', 'Raw Onions', 'Grilled Onions', 'Pickles', 'Bacon'],
     },
     ingredients: [{
         type: Schema.Types.ObjectId,

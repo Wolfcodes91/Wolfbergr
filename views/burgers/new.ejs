@@ -1,64 +1,63 @@
 <%- include('../partials/header') %>
 
-<form id="new-form" action="/burgers" method="POST">
-  <label>Name:</label>
-  <input type="text" name="name">
-  <label>Bun:
-    <select name="bun">
-        <option value="Standard">Standard</option>
-        <option value="Gluten-Free">Gluten-Free</option>
-        <option value="Lettuce Wrap">Lettuce Wrap</option>
-    </select>
-  <label>Patty:
-    <select name="patty">
-        <option value="Beef">Beef</option>
-        <option value="Chicken">Chicken</option>
-        <option value="Veggie">Veggie</option>
-        <option value="Black Bean">Black Bean</option>
-        <option value="Impossible">Impossible</option>
-    </select>
-    <label>Temperature (if Beef):</label>
-  <select name="temperature">
-    <option value="N/A">N/A</option>
-    <option value="Medium-Rare">Medium-Rare</option>
-    <option value="Medium">Medium</option>
-    <option value="Well-Done">Well-Done</option>
-  </select>
-  </label><br>
-  <label>Cheese:</label>
-  <select name="cheese">
-    <option value="None">None</option>
-    <option value="Cheddar">Cheddar</option>
-    <option value="Swiss">Swiss</option>
-    <option value="Pepper Jack">Pepper Jack</option>
-    <option value="Bleu">Bleu</option>
-    <option value="American">American</option>
-</select>
-  </label><br>
-  <label>Sauce:</label>
-  <input type="checkbox" value="Ketchup">Ketchup
-  <input type="checkbox" value="Mustard">Mustard
-  <input type="checkbox" value="Mayonaise">Mayonaise
-  <input type="checkbox" value="Sriracha">Sriracha
-  <input type="checkbox" value="Hot Sauce">Hot Sauce
-  <input type="checkbox" value="BBQ">BBQ
-  
-  </label><br>
+    <form id="new-form" action="/burgers" method="POST">
+        <label>Name:</label>
+        <input type="text" name="name">
+        <label>Bun:
+            <select name="bun">
+                <option value="Standard">Standard</option>
+                <option value="Gluten-Free">Gluten-Free</option>
+                <option value="Lettuce Wrap">Lettuce Wrap</option>
+            </select>
+            <label>Patty:
+                <select name="patty">
+                    <option value="Beef">Beef</option>
+                    <option value="Chicken">Chicken</option>
+                    <option value="Veggie">Veggie</option>
+                    <option value="Black Bean">Black Bean</option>
+                    <option value="Impossible">Impossible</option>
+                </select>
+                <label>Temperature (if Beef):</label>
+                <select name="temperature">
+                    <option value="N/A">N/A</option>
+                    <option value="Medium-Rare">Medium-Rare</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Well-Done">Well-Done</option>
+                </select>
+                <br>
+                <label>Cheese:</label>
+                <select name="cheese">
+                    <option value="None">None</option>
+                    <option value="Cheddar">Cheddar</option>
+                    <option value="Swiss">Swiss</option>
+                    <option value="Pepper Jack">Pepper Jack</option>
+                    <option value="Bleu">Bleu</option>
+                    <option value="American">American</option>
+                </select>
+                <br>
+                <label for="sauce">Sauce:</label>
+                <input id="sauce" type="checkbox" name="sauce" value="Ketchup">Ketchup
+                <input id="sauce" type="checkbox" name="sauce" value="Mustard">Mustard
+                <input id="sauce" type="checkbox" name="sauce" value="Mayonaise">Mayonaise
+                <input id="sauce" type="checkbox" name="sauce" value="Sriracha">Sriracha
+                <input id="sauce" type="checkbox" name="sauce" value="Hot Sauce">Hot Sauce
+                <input id="sauce" type="checkbox" name="sauce" value="BBQ">BBQ
 
-<label>Toppings:</label>
-    <input type="checkbox" value="None">None
-    <input type="checkbox" value="Lettuce">Lettuce
-    <input type="checkbox" value="Tomatoes">Tomatoes
-    <input type="checkbox" value="Raw Onions">Raw Onions
-    <input type="checkbox" value="Grilled Onions">Grilled Onions
-    <input type="checkbox" value="Pickles">Pickles
-    <input type="checkbox" value="Bacon">Bacon
-</select>
+            <br>
 
-<br>
-<div>Custom Ingredients:</div>  
+            <label>Toppings:</label>
+            <input id="toppings" type="checkbox" name="toppings" value="Lettuce">Lettuce
+            <input id="toppings" type="checkbox" name="toppings" value="Tomatoes">Tomatoes
+            <input id="toppings" type="checkbox" name="toppings" value="Raw Onions">Raw Onions
+            <input id="toppings" type="checkbox" name="toppings" value="Grilled Onions">Grilled Onions
+            <input id="toppings" type="checkbox" name="toppings" value="Pickles">Pickles
+            <input id="toppings" type="checkbox" name="toppings" value="Bacon">Bacon
+            </select>
+
+            <br>
+            <div>Custom Ingredients:</div>
 
 
-<input type="submit" value="Add Burger">
-</form>
-<%- include('../partials/footer') %>
+            <input type="submit" value="Add Burger">
+    </form>
+    <%- include('../partials/footer') %>
