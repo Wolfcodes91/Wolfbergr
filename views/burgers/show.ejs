@@ -12,7 +12,9 @@
     <div>Toppings: </div>
     <div><%= burger.toppings %></div>
     <div>Custom Ingredient: </div>
-    <div><%= burger.ingredients %></div>
+    <div><%- burger.ingredients.map(i =>
+    `<div value="${i._id}">${i.name} ${i.position}</div>`
+      ).join('') %></div>
     </section>
   
 <%- include('../partials/footer') %>
