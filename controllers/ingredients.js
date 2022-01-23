@@ -1,5 +1,5 @@
 const Ingredient = require('../models/ingredient');
-const Burger = require('../models/burger');
+// const Burger = require('../models/burger');
 
 module.exports = {
   create,
@@ -27,7 +27,7 @@ function deleteIngredient(req, res) {
 
   function create(req, res) {
     req.body.burger = req.params.id;
-    Ingredient.create(req.body, function(err, ingredient){
+    Ingredient.create(req.body, function(err, ingredients){
         res.redirect('/ingredients/new')
     });
 };
@@ -37,7 +37,7 @@ function deleteIngredient(req, res) {
     .sort('name')
     .exec(function (err, ingredients) {
       res.render('ingredients/new', {
-        title: 'Add Ingredient',
+        title: 'Add Ingredients',
         ingredients
       });
     });

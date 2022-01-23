@@ -1,10 +1,27 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: whitesmoke;
+}
+nav {
+  display: flex;
+  background-color: burlywood;
+  padding: 1vmin;
+  border-radius: 25%;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+h1, h2 {
+  display: flex;
+  justify-content: center;
 }
 
 a {
   color: #00B7FF;
+}
+a:hover {
+  color: darkblue
 }
 .login {
   display: flex;
@@ -15,4 +32,16 @@ a {
 
 .login img {
   height: 30px;
+}
+#welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }

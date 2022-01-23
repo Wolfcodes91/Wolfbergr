@@ -8,7 +8,6 @@ module.exports = {
     new: newBurger,
     create,
     delete: deleteBurger,
-
 }
 
 function deleteBurger(req, res) {
@@ -39,9 +38,10 @@ function show(req, res) {
 };
 
 function newBurger(req, res) {
-    res.render('burgers/new', { title: 'Add Burger' });
-}
-
+        Ingredient.find({ burger: burger._id }, function (err, ingredients) {
+            res.render('burgers/new', { title: 'Add Detail', burger, ingredients })
+    });
+};
 
 function create(req, res) {
     console.log('req.body is being logged', req.body)
@@ -49,8 +49,6 @@ function create(req, res) {
         req.body.user = req.user._id;
         req.body.userName = req.user.name;
         req.body.userAvatar = req.user.avatar;
-        // req.body.toppings = !!req.body.toppings;
-        // req.body.sauce = !!req.body.sauce;
         Burger.findById(req.params.id)
             .populate('ingredients').exec(function (err, burger) {
                 Ingredient.find(
