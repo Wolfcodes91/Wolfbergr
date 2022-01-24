@@ -45,27 +45,26 @@ a:hover {
   justify-content: space-between;
   align-items: center;
 }
-#badge-container {
+#badge-container, #add-ingredient-form {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  /* padding: 1rem; */
-  width: 10%;
   border-radius: .5rem;
-  margin: .5rem 0 2rem;
+  justify-content: center;
+  align-items: center;
 }
 
-.badge, .badgeButton {
+.badge, .badgeButton, .badgeButton2 {
   background-color: burlywood;
   padding: .5rem;
   margin: .5rem .5rem 0 .5rem;
   border-radius: .3rem;
   font-size: .8rem;
   text-align: center;
-  
+  justify-content: center;
 }
 
-.badgeButton {
+.badgeButton, .badgeButton2 {
   background-color: lightgray;
 }
 
@@ -74,14 +73,17 @@ a:hover {
 }
 
 .badge2 {
-  padding: .5rem;
   margin: .5rem .5rem 0 .5rem;
   border-radius: .3rem;
   font-size: .8rem;
   text-align: center;
 }
 
-#new-form {
+.badgeButton2:hover {
+  background-color: lightgreen;
+}
+
+#new-form, #show-page {
   padding: .5rem;
   margin: .5rem .5rem 0 .5rem;
   border-radius: .3rem;

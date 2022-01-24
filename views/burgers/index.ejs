@@ -16,7 +16,7 @@
         <td>   
         <% if (user) { %>
             <form action="/burgers/<%= b._id %>?_method=DELETE" method="POST">
-              <button type="submit">Delete Burger</button>
+              <button class="badgeButton" type="submit">Delete Burger</button>
             </form>
            <% } %>
         </td>

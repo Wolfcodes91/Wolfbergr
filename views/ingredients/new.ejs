@@ -1,7 +1,8 @@
 <%- include('../partials/header') %>
 
-<h5>Custom Ingredients:</h5>
+
 <section id="badge-container">
+    <h5>Custom Ingredients:</h5>
   <% ingredients.forEach(function(i) { %>
     <article class="badge"><%= i.name + ' -- ' + i.position %></article>
     <% if (user) { %>
@@ -18,7 +19,7 @@
   <h5>Add your custom ingredient, and define it's position - (patty, cheese, sauce, toppings)</h5>
   <input class="badge2" type="text" placeholder="Ingredient" name="name">
   <input class="badge2" type="text" placeholder="Position" name="position">
-  <input class="badgeButton" type="submit" value="Add Ingredient">
+  <input class="badgeButton2" type="submit" value="Add Ingredient">
 </form>
 
 <%- include('../partials/footer') %>
