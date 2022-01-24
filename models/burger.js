@@ -25,7 +25,7 @@ const burgerSchema = new Schema({
     },
     sauce: {
         type: [String],
-        enum: ['None', ' Ketchup', ' Mustard', ' Mayonaise', ' Sriracha', ' Hot Sauce', ' BBQ'],
+        enum: ['None', ' Ketchup', ' Mustard', ' Mayonaise', 'Thousand Island', ' Sriracha', ' Hot Sauce', ' BBQ'],
         default: ['None'],
     },
     toppings: {
@@ -36,7 +36,7 @@ const burgerSchema = new Schema({
     ingredients: [{
         type: [String],
     }],
-    user: { type: Schema.Types.ObjectId, ref: 'User' },
+    userId: { type: Schema.Types.ObjectId, ref: 'User' },
     userName: String,
     userAvatar: String,
 }, {

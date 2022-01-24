@@ -26,7 +26,7 @@ function deleteIngredient(req, res) {
 //   }
 
   function create(req, res) {
-    req.body.user = req.user._id;
+    req.body.userId = req.user._id;
     req.body.userName = req.user.name;
     req.body.userAvatar = req.user.avatar;  
     Ingredient.create(req.body, function(err, ingredient){

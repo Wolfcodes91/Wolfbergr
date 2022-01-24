@@ -37,14 +37,13 @@ function newBurger(req, res) {
 };
 
 function create(req, res) {
-    req.body.user = req.user._id;
+    req.body.userId = req.user._id;
     req.body.userName = req.user.name;
     req.body.userAvatar = req.user.avatar;
     if (req.body.ingredients === "None") {
         req.body.ingredients = [];
     } 
     Burger.create(req.body, function (err, burger) {
-        console.log(err, burger)
         if (err) return res.redirect('/burgers/new');
         res.redirect(`/burgers/${burger._id}`);
     });
