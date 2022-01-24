@@ -1,7 +1,6 @@
-const burger = require('../models/burger');
 const Burger = require('../models/burger');
 const Ingredient = require('../models/ingredient');
-const ingredients = require('./ingredients');
+
 
 module.exports = {
     index,

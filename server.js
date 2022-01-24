@@ -13,6 +13,7 @@ require('./config/passport');
 
 var indexRouter = require('./routes/index');
 var burgersRouter = require('./routes/burgers');
+var reviewsRouter = require('./routes/reviews');
 var ingredientsRouter = require('./routes/ingredients');
 
 
@@ -47,6 +48,7 @@ const isLoggedIn = require('./config/auth');
 
 app.use('/', indexRouter);
 app.use('/burgers', burgersRouter);
+app.use('/', isLoggedIn, reviewsRouter);
 app.use('/', isLoggedIn, ingredientsRouter);
 
 

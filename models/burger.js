@@ -2,6 +2,21 @@ const mongoose = require('mongoose');
 // shortcut variable
 const Schema = mongoose.Schema;
 
+const reviewSchema = new Schema({
+    content: String,
+    rating: {
+      type: Number,
+      min: 1,
+      max: 5,
+      default: 5
+    },
+    userId: {type: Schema.Types.ObjectId, ref: 'User'},
+    userName: String,
+    userAvatar: String
+  }, {
+    timestamps: true
+  });
+
 const burgerSchema = new Schema({
     name: {
         type: String,
@@ -35,12 +50,17 @@ const burgerSchema = new Schema({
     },
     ingredients: [{
         type: [String],
+     
     }],
+    reviews: [reviewSchema],
     userId: { type: Schema.Types.ObjectId, ref: 'User' },
     userName: String,
     userAvatar: String,
 }, {
-    timestamps: true
+    timestamps: true,
+    
 });
+
+    
 
 module.exports = mongoose.model('Burger', burgerSchema);

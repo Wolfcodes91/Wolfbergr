@@ -97,3 +97,18 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
+.review-user, #add-review-form, #reviews-empty {
+  padding: 1vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.review-button {
+  padding: 0.5vmin;
+  border-radius: 10%;
+}
+
+.review-button:hover {
+  background-color: goldenrod;
+}
