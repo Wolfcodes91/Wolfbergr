@@ -91,3 +91,8 @@ a:hover {
   font-size: .8rem;
   text-align: center;
 }
+#cust-ing-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -5,7 +5,7 @@
     <h5>Custom Ingredients:</h5>
   <% ingredients.forEach(function(i) { %>
     <article class="badge"><%= i.name + ' -- ' + i.position %></article>
-    <% if (user && user._id.equals(i.userId)) { %>
+    <% if (user ) { %>
         <form action="/ingredients/<%= i._id %>?_method=DELETE" method="POST">
           <button class="badgeButton" type="submit">Delete Ingredient</button>
         </form>
@@ -21,5 +21,7 @@
   <input class="badge2" type="text" placeholder="Position" name="position">
   <input class="badgeButton2" type="submit" value="Add Ingredient">
 </form>
+
+<!-- && user._id.equals(i.userId) -->
 
 <%- include('../partials/footer') %>

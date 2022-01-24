@@ -1,6 +1,7 @@
 const burger = require('../models/burger');
 const Burger = require('../models/burger');
-const Ingredient = require('../models/ingredient')
+const Ingredient = require('../models/ingredient');
+const ingredients = require('./ingredients');
 
 module.exports = {
     index,
@@ -8,14 +9,6 @@ module.exports = {
     new: newBurger,
     create,
     delete: deleteBurger,
-}
-
-function deleteBurger(req, res) {
-    Burger.findOneAndDelete(
-        { _id: req.params.id }, function (err) {
-            res.redirect('/burgers/');
-        }
-    )
 }
 
 function index(req, res) {
@@ -44,17 +37,23 @@ function newBurger(req, res) {
 };
 
 function create(req, res) {
-    console.log('req.body is being logged', req.body)
     req.body.user = req.user._id;
     req.body.userName = req.user.name;
     req.body.userAvatar = req.user.avatar;
     if (req.body.ingredients === "None") {
         req.body.ingredients = [];
-    } else {
-        req.body.ingredients = [req.body.ingredients];
     } 
     Burger.create(req.body, function (err, burger) {
+        console.log(err, burger)
         if (err) return res.redirect('/burgers/new');
         res.redirect(`/burgers/${burger._id}`);
     });
+}
+
+function deleteBurger(req, res) {
+    Burger.findOneAndDelete(
+        { _id: req.params.id }, function (err) {
+            res.redirect('/burgers/');
+        }
+    )
 }

@@ -8,6 +8,7 @@
             <option value="Standard">Standard</option>
             <option value="Gluten-Free">Gluten-Free</option>
             <option value="Lettuce Wrap">Lettuce Wrap</option>
+            <option value="Custom">Custom</option>
         </select>
         <label>Patty:</label>
         <select name="patty">
@@ -34,6 +35,7 @@
             <option value="Pepper Jack">Pepper Jack</option>
             <option value="Bleu">Bleu</option>
             <option value="American">American</option>
+            <option value="Custom">Custom</option>
         </select>
         <br>
         <label for="sauce">Sauce:</label>
@@ -56,13 +58,17 @@
         </select>
 
         <br>
+        <div id="cust-ing-form">
         <label>Custom Ingredient:</label>
+        <% ingredients.forEach(function(i) { %>
         <select name="ingredients">
             <option value="None" selected>-None-</option>
             <%- ingredients.map(i=>
                 `<option value="${i.name}">${i.name}</option>`
                 ).join('') %>
         </select>
+        <% }) %>
+        </div>
         <input class="badgeButton2" type="submit" value="Add Burger">
     </form>
     <%- include('../partials/footer') %>
