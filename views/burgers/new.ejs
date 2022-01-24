@@ -60,14 +60,11 @@
         <br>
         <div id="cust-ing-form">
         <label>Custom Ingredient:</label>
-        <% ingredients.forEach(function(i) { %>
-        <select name="ingredients">
-            <option value="None" selected>-None-</option>
+        <!-- <select name="ingredients"> -->
             <%- ingredients.map(i=>
-                `<option value="${i.name}">${i.name}</option>`
+            `<input type="checkbox" id="ingredients" name="ingredients" value="${i.name}">${i.name}`
                 ).join('') %>
         </select>
-        <% }) %>
         </div>
         <input class="badgeButton2" type="submit" value="Add Burger">
     </form>
