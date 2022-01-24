@@ -45,3 +45,46 @@ a:hover {
   justify-content: space-between;
   align-items: center;
 }
+#badge-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* padding: 1rem; */
+  width: 10%;
+  border-radius: .5rem;
+  margin: .5rem 0 2rem;
+}
+
+.badge, .badgeButton {
+  background-color: burlywood;
+  padding: .5rem;
+  margin: .5rem .5rem 0 .5rem;
+  border-radius: .3rem;
+  font-size: .8rem;
+  text-align: center;
+  
+}
+
+.badgeButton {
+  background-color: lightgray;
+}
+
+.badgeButton:hover {
+  background-color: red;
+}
+
+.badge2 {
+  padding: .5rem;
+  margin: .5rem .5rem 0 .5rem;
+  border-radius: .3rem;
+  font-size: .8rem;
+  text-align: center;
+}
+
+#new-form {
+  padding: .5rem;
+  margin: .5rem .5rem 0 .5rem;
+  border-radius: .3rem;
+  font-size: .8rem;
+  text-align: center;
+}

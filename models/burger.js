@@ -13,7 +13,7 @@ const burgerSchema = new Schema({
     },
     patty: {
         type: String,
-        enum: ['Beef', 'Chicken', 'Veggie', 'Black Bean', 'Impossible']
+        enum: ['Beef', 'Chicken', 'Veggie', 'Black Bean', 'Impossible', 'Custom']
     },
     temperature: {
         type: String,

@@ -1,20 +1,16 @@
 <%- include('../partials/header') %>
 
 <section id="show-page">
-    <div>Burger Name: </div>
-    <div><%= burger.name %></div>
-    <div>Patty:</div>
-    <div><%= burger.patty %></div>
-    <div>Cheese: </div>
-    <div><%= burger.cheese %></div>
-    <div>Sauce: </div>
-    <div><%= burger.sauce %></div>
-    <div>Toppings: </div>
-    <div><%= burger.toppings %></div>
-    <div>Custom Ingredient: </div>
-    <div><%- burger.ingredients.map(i =>
-    `<div value="${i._id}">${i.name} ${i.position}</div>`
-      ).join('') %></div>
+    <div>Burger Name: <span><%= burger.name %></span></div>
+    <div>Patty: <span><%= burger.patty %></span></div>
+    <div>Cheese: <span><%= burger.cheese %></span></div>
+    <div>Sauce: <span><%= burger.sauce %></span></div>
+    <div>Toppings: <span><%= burger.toppings %></span></div>
+    <div>Custom Ingredient: 
+        <span><%- burger.ingredients.map(i =>
+        `<span value="${i._id}">${i.name}</span>`
+          ).join('') %></span>
+    </div> 
     </section>
   
 <%- include('../partials/footer') %>

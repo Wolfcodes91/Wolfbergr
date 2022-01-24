@@ -39,7 +39,7 @@ function show(req, res) {
 
 function newBurger(req, res) {
         Ingredient.find({ burger: burger._id }, function (err, ingredients) {
-            res.render('burgers/new', { title: 'Add Detail', burger, ingredients })
+            res.render('burgers/new', { title: 'Create Burger', burger, ingredients })
     });
 };
 
