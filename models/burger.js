@@ -9,7 +9,7 @@ const burgerSchema = new Schema({
     },
     bun: {
         type: String,
-        enum: ['Standard', 'Gluten Free', 'Lettuce Wrap', 'Custom']
+        enum: ['Standard', 'Gluten-Free', 'Lettuce Wrap', 'Custom']
     },
     patty: {
         type: String,
@@ -25,7 +25,7 @@ const burgerSchema = new Schema({
     },
     sauce: {
         type: [String],
-        enum: ['None', ' Ketchup', ' Mustard', ' Mayonaise', 'Thousand Island', ' Sriracha', ' Hot Sauce', ' BBQ'],
+        enum: ['None', ' Ketchup', ' Mustard', ' Mayonaise', ' Thousand Island', ' Sriracha', ' Hot Sauce', ' BBQ'],
         default: ['None'],
     },
     toppings: {
