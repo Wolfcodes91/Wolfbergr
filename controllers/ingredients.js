@@ -26,8 +26,10 @@ function deleteIngredient(req, res) {
 //   }
 
   function create(req, res) {
-    req.body.burger = req.params.id;
-    Ingredient.create(req.body, function(err, ingredients){
+    req.body.user = req.user._id;
+    req.body.userName = req.user.name;
+    req.body.userAvatar = req.user.avatar;  
+    Ingredient.create(req.body, function(err, ingredient){
         res.redirect('/ingredients/new')
     });
 };

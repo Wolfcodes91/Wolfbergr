@@ -38,28 +38,22 @@ function show(req, res) {
 };
 
 function newBurger(req, res) {
-        Ingredient.find({ burger: burger._id }, function (err, ingredients) {
-            res.render('burgers/new', { title: 'Create Burger', burger, ingredients })
+    Ingredient.find({}, function (err, ingredients) {
+        res.render('burgers/new', { title: 'Create Burger', ingredients })
     });
 };
 
 function create(req, res) {
     console.log('req.body is being logged', req.body)
-    var burger = new Burger(req.body, function (err, burger) {
-        req.body.user = req.user._id;
-        req.body.userName = req.user.name;
-        req.body.userAvatar = req.user.avatar;
-        Burger.findById(req.params.id)
-            .populate('ingredients').exec(function (err, burger) {
-                Ingredient.find(
-                    { _id: { $nin: burger.customIngredient } },
-                    function (err, ingredients) {
-                        res.render('burgers', { title: 'Burger', burger, ingredients });
-                    }
-                )
-            });
-    });
-    burger.save(function (err) {
+    req.body.user = req.user._id;
+    req.body.userName = req.user.name;
+    req.body.userAvatar = req.user.avatar;
+    if (req.body.ingredients === "None") {
+        req.body.ingredients = [];
+    } else {
+        req.body.ingredients = [req.body.ingredients];
+    } 
+    Burger.create(req.body, function (err, burger) {
         if (err) return res.redirect('/burgers/new');
         res.redirect(`/burgers/${burger._id}`);
     });

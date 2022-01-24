@@ -73,6 +73,7 @@ a:hover {
 }
 
 .badge2 {
+  padding: .2rem;
   margin: .5rem .5rem 0 .5rem;
   border-radius: .3rem;
   font-size: .8rem;
