@@ -18,7 +18,14 @@
         <% } %>
     </div> 
     </section>
-
+    <div class="burger-render">
+      <div id="top-bun"></div>
+      <div id="sauce"></div>
+      <div id="toppings"></div>
+      <div id="cheese"></div>
+      <div id="patty"></div>
+      <div id="bottom-bun"></div>
+    </div>
 
     <br><br>
     <% if (user) { %>
@@ -60,7 +67,7 @@
               <td><%= r.rating %></td>
               <td>
                 <% if (user && user._id.equals(r.userId)) { %>
-                  <a href="/burgers/<%= burger._id %>/reviews/<%= r._id %>/edit" <%- title === 'Edit Review' ? 'class="active"' : '' %>>Edit Review</a>
+                  <a href="/reviews/<%= r._id %>/edit" <%- title === 'Update Review' ? 'class="active"' : '' %>>Update Review</a>
                 <% } %>
                 <% if (user && user._id.equals(r.userId)) { %>
                   <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">

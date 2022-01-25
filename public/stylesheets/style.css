@@ -45,7 +45,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
 }
-#badge-container, #add-ingredient-form {
+#badge-container, #add-ingredient-form, #update-review-form {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -119,4 +119,34 @@ a:hover {
 
 .add-review-button:hover {
   background-color: lightgreen;
+}
+
+.burger-render {
+  display: grid;
+  grid-template-rows: 60px 5px 10px 15px 50px 60px;
+  grid-template-columns: 35%;
+  row-gap: 10px;
+  justify-content: center;
+  margin: 5vmin;
+}
+#top-bun {
+  background-color: tan;
+  border-radius: 50% 50% 5% 5%;
+}
+#sauce {
+  background-color: orange;
+}
+#toppings {
+  background-color: red;
+}
+#cheese {
+  background-color: yellow;
+}
+#patty {
+  background-color: brown;
+  border-radius: 10%;
+}
+#bottom-bun {
+  background-color: tan;
+  border-radius: 5% 5% 25% 25%;
 }

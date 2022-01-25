@@ -1,9 +1,11 @@
 const Burger = require('../models/burger');
+const burgers = require('./burgers');
 
 module.exports = {
   create,
   delete: deleteReview,
-  edit: editReview,
+  edit,
+  update
 };
 
 function deleteReview(req, res) {
@@ -30,9 +32,21 @@ function create(req, res) {
   });
 }
 
-function editReview(req, res) {
-  console.log(req.body)
-  Burger.findById(req.params.id, function(err, burger) {
-    res.render('burgers/edit', {title: 'Edit Review'}, burger)
+function edit(req, res) {
+  Burger.findOne({"reviews._id": req.params.id}, function(err, burger) {
+    const review = burger.reviews.id(req.params.id)
+    console.log(review)
+    res.render('reviews/edit', {title: 'Update Review', review})
   })
+}
+
+function update(req, res) {
+  Burger.findOne({"reviews._id": req.params.id}, function(err, burger) {
+    const review = burger.reviews.id(req.params.id);
+    review.content = req.body.content;
+    review.rating = req.body.rating;
+    burger.save(function(err) {
+      res.redirect(`/burgers/${burger._id}`);
+    });
+  });
 }
