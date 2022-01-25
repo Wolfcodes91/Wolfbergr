@@ -104,11 +104,19 @@ a:hover {
   align-items: flex-end;
   justify-content: center;
 }
-.review-button {
+.edit-review-button, .delete-review-button, .add-review-button {
   padding: 0.5vmin;
   border-radius: 10%;
 }
 
-.review-button:hover {
+.edit-review-button:hover {
   background-color: goldenrod;
+}
+
+.delete-review-button:hover {
+  background-color: red;
+}
+
+.add-review-button:hover {
+  background-color: lightgreen;
 }

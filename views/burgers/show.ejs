@@ -35,7 +35,7 @@
           <option value="4">4</option>
           <option value="5" selected>5</option>
         </select>
-        <input class="review-button" type="submit" value="Add Review">
+        <input class="add-review-button" type="submit" value="Add Review">
       </form>
     <% } %>
     <% if (burger.reviews.length) { %>
@@ -60,8 +60,11 @@
               <td><%= r.rating %></td>
               <td>
                 <% if (user && user._id.equals(r.userId)) { %>
+                  <a href="/burgers/<%= burger._id %>/reviews/<%= r._id %>/edit" <%- title === 'Edit Review' ? 'class="active"' : '' %>>Edit Review</a>
+                <% } %>
+                <% if (user && user._id.equals(r.userId)) { %>
                   <form action="/reviews/<%= r._id %>?_method=DELETE" method="POST">
-                    <button class="review-button" type="submit">X</button>
+                    <button class="delete-review-button" type="submit">X</button>
                   </form>
                 <% } %>
               </td>

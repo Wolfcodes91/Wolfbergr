@@ -4,7 +4,6 @@ const Ingredient = require('../models/ingredient');
 module.exports = {
   create,
   new: newIngredient,
-//   addToBurger,
   delete: deleteIngredient,
 };
 
@@ -15,15 +14,6 @@ function deleteIngredient(req, res) {
           }
     )
 }
-
-// function addToBurger(req, res) {
-//     Burger.findById(req.params.burgerId, function(err, burger) {
-//       burger.ingredients.push(req.body.ingredientId);
-//       burger.save(function(err) {
-//         res.redirect(`/burgers/${burger._id}`);
-//       })
-//     })
-//   }
 
   function create(req, res) {
     req.body.userId = req.user._id;

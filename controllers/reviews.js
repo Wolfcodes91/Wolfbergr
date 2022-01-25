@@ -2,7 +2,8 @@ const Burger = require('../models/burger');
 
 module.exports = {
   create,
-  delete: deleteReview
+  delete: deleteReview,
+  edit: editReview,
 };
 
 function deleteReview(req, res) {
@@ -24,8 +25,14 @@ function create(req, res) {
     req.body.userAvatar = req.user.avatar;
     burger.reviews.push(req.body);
     burger.save(function(err) {
-        console.log(err)
       res.redirect(`/burgers/${burger._id}`);
     });
   });
+}
+
+function editReview(req, res) {
+  console.log(req.body)
+  Burger.findById(req.params.id, function(err, burger) {
+    res.render('burgers/edit', {title: 'Edit Review'}, burger)
+  })
 }

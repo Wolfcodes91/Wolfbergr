@@ -8,5 +8,7 @@ const reviewsCtrl = require('../controllers/reviews');
 router.post('/burgers/:id/reviews', reviewsCtrl.create);
 // DELETE /reviews/:id
 router.delete('/reviews/:id', reviewsCtrl.delete);
+// PUT /reviews/:id
+router.get('/burgers/:id/reviews/:id/edit', reviewsCtrl.edit);
 
 module.exports = router;
