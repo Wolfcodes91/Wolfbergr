@@ -4,7 +4,9 @@
     <div>Burger Name: <span><%= burger.name %></span></div>
     <div>Bun: <span><%= burger.bun %></span></div>
     <div>Patty: <span><%= burger.patty %></span></div>
-    <div>Temperature: <span><%= burger.temperature %></span></div>
+    <% if (burger.patty === 'Beef') { %>
+      <div>Temperature: <span><%= burger.temperature %></span></div>
+    <% } %>
     <div>Cheese: <span><%= burger.cheese %></span></div>
     <div>Sauce: <span><%= burger.sauce %></span></div>
     <div>Toppings: <span><%= burger.toppings %></span></div>
