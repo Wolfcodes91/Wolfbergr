@@ -1,13 +1,13 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: whitesmoke;
+  background-color: grey;
 }
 nav {
   display: flex;
-  background-color: burlywood;
+  background-color: rgb(135, 170, 222);
   padding: 1vmin;
-  border-radius: 25%;
+  border-radius: 15%;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
@@ -18,7 +18,7 @@ h1, h2 {
 }
 
 a {
-  color: #00B7FF;
+  color: #ff0019;
 }
 a:hover {
   color: darkblue
@@ -130,13 +130,13 @@ a:hover {
 }
 
 .burger-render {
-  height: 500px;
+  height: 50vmin;
   width: 50%;
-  row-gap: 10px;
+  row-gap: 1vmin;
   margin: 5vmin;
 }
 #top-bun {
-  height: 70px;
+  height: 8.5vmin;
   background-image: radial-gradient(whitesmoke 5%, transparent 5%),
   radial-gradient(whitesmoke 5%, transparent 5%);
   background-color: tan;
@@ -146,7 +146,7 @@ a:hover {
   margin: 3px;
 }
 #gftop-bun {
-  height: 70px;
+  height: 8.5vmin;
   background-image: radial-gradient(white 5%, transparent 5%),
   radial-gradient(black 5%, transparent 5%);
   background-color: burlywood;
@@ -156,7 +156,7 @@ a:hover {
   margin: 3px;
 }
 #customtop-bun {
-  height: 70px;
+  height: 8.5vmin;
   background-color: tan;
   border-radius: 60% 60% 10% 10%;
   margin: 3px;
@@ -214,42 +214,61 @@ a:hover {
   background-color: brown;
 }
 #cheddar-cheese {
-  height: 15px;
-  background-color: rgb(245, 225, 111);
+  height: 1.8vmin;
+  background-color: rgb(242, 192, 66);
+  border-radius: 65% 47% 3% 5%;
   margin: 3px;
 }
 #swiss-cheese {
-  height: 15px;
+  height: 1.8vmin;
+  background-image: radial-gradient(grey 55%, transparent 10%),
+  radial-gradient(grey 13%, transparent 13%);
   background-color: rgb(245, 242, 221);
+  background-position: 0 0 , 50px 50px;
+  background-size: 100px 100px;
+  /* border: dotted 0.5vmin rgb(245, 242, 221); */
+  border-radius: 45% 40% 3% 5%;
   margin: 3px;
 }
 #jack-cheese {
-  height: 15px;
+  height: 1.8vmin;
+  background-image: radial-gradient(rgb(249, 3, 3) 51%, transparent 50%),
+  radial-gradient(rgb(50, 171, 17) 9%, transparent 19%);
   background-color: rgb(238, 237, 181);
+  background-position: 0 0 , 50px 50px;
+  background-size: 80px 100px;
+  border-radius: 55% 50% 3% 5%;
   margin: 3px;
 }
 #bleu-cheese {
-  height: 15px;
-  background-color: lightskyblue;
+  height: 1.8vmin;
+  background-image: radial-gradient(lightskyblue 35%, transparent 65%),
+  radial-gradient(rgb(237, 235, 223) 12%, transparent 59%);
+  background-color: white;
+  background-position: 0 0 , 50px 50px;
+  background-size: 80px 100px;
+  border-radius: 55% 50% 11% 15%;
   margin: 3px;
 }
 #american-cheese {
-  height: 15px;
-  background-color: gold;
+  height: 1.8vmin;
+  background-color: rgb(247, 201, 18);
+  border-radius: 65% 47% 3% 5%;
   margin: 3px;
 }
 #custom-cheese {
-  height: 15px;
-  background-color: gold;
+  height: 1.8vmin;
+  background-color: rgb(234, 220, 146);
   margin: 3px;
+  border-radius: 65% 47% 3% 5%;
   text-align: center;
-  font-size: 1vmin;
-  color: white;
+  font-size: 1.5vmin;
+  color: brown;
 }
 #beef-patty {
   height: 5vmin;
-  background-image: radial-gradient(whitesmoke 12%, transparent 8%),
-  radial-gradient(whitesmoke 7%, transparent 10%);
+  background-image: radial-gradient(grey 12%, transparent 8%),
+  radial-gradient(grey 7%, transparent 10%);
   background-color: brown;
   border-radius: 20% 20% 10% 10%;
   background-position: 0 0 , 50px 50px;
@@ -258,8 +277,8 @@ a:hover {
 }
 #chicken-patty {
   height: 5.5vmin;
-  background-image: radial-gradient(whitesmoke 11%, transparent 16%),
-  radial-gradient(whitesmoke 14%, transparent 14%);
+  background-image: radial-gradient(grey  11%, transparent 16%),
+  radial-gradient(grey  14%, transparent 14%);
   background-color: rgb(150, 84, 4);
   border-radius: 27% 33% 24% 7%;
   background-position: 0 0 , 50px 50px;
@@ -288,8 +307,8 @@ a:hover {
 }
 #impossible-patty {
   height: 5vmin;
-  background-image: radial-gradient(whitesmoke 12%, transparent 8%),
-  radial-gradient(whitesmoke 7%, transparent 10%);
+  background-image: radial-gradient(grey  12%, transparent 8%),
+  radial-gradient(grey  7%, transparent 10%);
   background-color: rgb(92, 51, 1);
   border-radius: 23% 23% 10% 10%;
   margin: 3px;
@@ -298,27 +317,27 @@ a:hover {
 }
 #custom-patty {
   height: 5vmin;
-  background-image: radial-gradient(whitesmoke 12%, transparent 8%),
-  radial-gradient(whitesmoke 7%, transparent 10%);
+  background-image: radial-gradient(grey  12%, transparent 8%),
+  radial-gradient(grey  7%, transparent 10%);
   background-color: rgb(193, 133, 108);
   border-radius: 23% 23% 10% 10%;
   margin: 3px;
   background-position: 0 0, 50px 50px;
   background-size: 80px 100px;
   text-align: center;
-  font-size: 2vmin;
-  color: white;
+  font-size: 3.5vmin;
+  color: brown;
 }
 #bottom-bun {
-  height: 50px;
+  height: 5vmin;
   background-color: tan;
   border-radius: 10% 10% 30% 30%;
   margin: 3px;
 }
 #lettuce-wrap {
   height: 2vmin;
-  background-image: radial-gradient(whitesmoke 5%, transparent 8%),
-  radial-gradient(whitesmoke 5%, transparent 10%);
+  background-image: radial-gradient(grey  5%, transparent 8%),
+  radial-gradient(grey  5%, transparent 10%);
   background-color: lightgreen;
   border-radius: 29% 20% 33% 18%;
   background-position: 0 0, 50px 50px;
@@ -326,13 +345,13 @@ a:hover {
   margin: 3px;
 }
 #gfbottom-bun {
-  height: 50px;
+  height: 5vmin;
   background-color: burlywood;
   border-radius: 10% 10% 30% 30%;
   margin: 3px;
 }
 #custombottom-bun {
-  height: 50px;
+  height: 5vmin;
   background-color: tan;
   border-radius: 10% 10% 30% 30%;
   margin: 3px;
