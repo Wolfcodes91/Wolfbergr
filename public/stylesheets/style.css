@@ -103,6 +103,7 @@ a:hover {
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
+  position: relative;
 }
 .edit-review-button, .delete-review-button, .add-review-button {
   padding: 0.5vmin;
@@ -123,7 +124,9 @@ a:hover {
 .burger {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  position: absolute;
+  flex-wrap: wrap;
 }
 
 .burger-render {
@@ -134,14 +137,22 @@ a:hover {
 }
 #top-bun {
   height: 70px;
+  background-image: radial-gradient(whitesmoke 5%, transparent 5%),
+  radial-gradient(whitesmoke 5%, transparent 5%);
   background-color: tan;
-  border-radius: 60% 60% 10% 10%;
+  border-radius: 63% 66% 10% 10%;
+  background-position: 0 0 , 50px 50px;
+  background-size: 85px 80px;
   margin: 3px;
 }
 #gftop-bun {
   height: 70px;
+  background-image: radial-gradient(white 5%, transparent 5%),
+  radial-gradient(black 5%, transparent 5%);
   background-color: burlywood;
-  border-radius: 60% 60% 10% 10%;
+  border-radius: 66% 69% 10% 10%;
+  background-position: 0 0 , 50px 50px;
+  background-size: 87px 80px;
   margin: 3px;
 }
 #customtop-bun {
@@ -236,41 +247,64 @@ a:hover {
   color: white;
 }
 #beef-patty {
-  height: 50px;
+  height: 5vmin;
+  background-image: radial-gradient(whitesmoke 7%, transparent 8%),
+  radial-gradient(whitesmoke 7%, transparent 10%);
   background-color: brown;
-  border-radius: 20%;
+  border-radius: 20% 20% 10% 10%;
+  background-position: 0 0 , 50px 50px;
+  background-size: 80px 100px;
   margin: 3px;
 }
 #chicken-patty {
-  height: 50px;
+  height: 5.5vmin;
+  background-image: radial-gradient(whitesmoke 11%, transparent 16%),
+  radial-gradient(whitesmoke 14%, transparent 14%);
   background-color: rgb(150, 84, 4);
-  border-radius: 20%;
+  border-radius: 27% 33% 24% 7%;
+  background-position: 0 0 , 50px 50px;
+  background-size: 64px 100px;
   margin: 3px;
 }
 #veggie-patty {
-  height: 50px;
-  background-color: rgb(85, 77, 66);
-  border-radius: 20%;
+  height: 5vmin;
+  background-image: radial-gradient(#cb5b16 12%, transparent 34%),
+  radial-gradient(#488a05 9%, transparent 30%);
+  background-color: rgb(147, 105, 47);
+  background-position: 0 0 , 50px 50px;
+  background-size: 70px 100px;
+  border-radius: 23% 23% 10% 10%;
   margin: 3px;
 }
 #bean-patty {
-  height: 50px;
-  background-color: rgb(41, 23, 1);
-  border-radius: 20%;
+  height: 5vmin;
+  border-radius: 23% 23% 10% 10%;
   margin: 3px;
+  background-image: radial-gradient(#212121 22%, transparent 33%),
+      radial-gradient(#e3b915 12%, transparent 22%);
+  background-color: #764f4f;
+  background-position: 0 0, 50px 50px;
+  background-size: 85px 100px;
 }
 #impossible-patty {
-  height: 50px;
+  height: 5vmin;
+  background-image: radial-gradient(whitesmoke 7%, transparent 8%),
+  radial-gradient(whitesmoke 7%, transparent 10%);
   background-color: rgb(92, 51, 1);
-  border-radius: 20%;
+  border-radius: 23% 23% 10% 10%;
   margin: 3px;
+  background-position: 0 0, 50px 50px;
+  background-size: 80px 100px;
 }
 #custom-patty {
-  height: 50px;
+  height: 5vmin;
+  background-image: radial-gradient(whitesmoke 7%, transparent 8%),
+  radial-gradient(whitesmoke 7%, transparent 10%);
   background-color: rgb(193, 133, 108);
-  border-radius: 20%;
+  border-radius: 23% 23% 10% 10%;
   margin: 3px;
-  border: solid lightgray 0.2vmin;
+  background-position: 0 0, 50px 50px;
+  background-size: 80px 100px;
   text-align: center;
   font-size: 2vmin;
   color: white;
@@ -282,9 +316,13 @@ a:hover {
   margin: 3px;
 }
 #lettuce-wrap {
-  height: 20px;
+  height: 2vmin;
+  background-image: radial-gradient(whitesmoke 5%, transparent 8%),
+  radial-gradient(whitesmoke 5%, transparent 10%);
   background-color: lightgreen;
-  border-radius: 30% 30% 30% 30%;
+  border-radius: 29% 20% 33% 18%;
+  background-position: 0 0, 50px 50px;
+  background-size: 25px 100px;
   margin: 3px;
 }
 #gfbottom-bun {
