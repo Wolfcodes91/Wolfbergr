@@ -138,6 +138,22 @@ a:hover {
   border-radius: 60% 60% 10% 10%;
   margin: 3px;
 }
+#gftop-bun {
+  height: 70px;
+  background-color: burlywood;
+  border-radius: 60% 60% 10% 10%;
+  margin: 3px;
+}
+#customtop-bun {
+  height: 70px;
+  background-color: tan;
+  border-radius: 60% 60% 10% 10%;
+  margin: 3px;
+  text-align: center;
+  font-size: 2vmin;
+  color: white;
+}
+
 .sauce {
   height: 4px;
   margin: 3px;
@@ -186,20 +202,103 @@ a:hover {
 .Bacon {
   background-color: brown;
 }
-#cheese {
+#cheddar-cheese {
+  height: 15px;
+  background-color: rgb(245, 225, 111);
+  margin: 3px;
+}
+#swiss-cheese {
+  height: 15px;
+  background-color: rgb(245, 242, 221);
+  margin: 3px;
+}
+#jack-cheese {
+  height: 15px;
+  background-color: rgb(238, 237, 181);
+  margin: 3px;
+}
+#bleu-cheese {
+  height: 15px;
+  background-color: lightskyblue;
+  margin: 3px;
+}
+#american-cheese {
   height: 15px;
   background-color: gold;
   margin: 3px;
 }
-#patty {
+#custom-cheese {
+  height: 15px;
+  background-color: gold;
+  margin: 3px;
+  text-align: center;
+  font-size: 1vmin;
+  color: white;
+}
+#beef-patty {
   height: 50px;
   background-color: brown;
   border-radius: 20%;
   margin: 3px;
+}
+#chicken-patty {
+  height: 50px;
+  background-color: rgb(150, 84, 4);
+  border-radius: 20%;
+  margin: 3px;
+}
+#veggie-patty {
+  height: 50px;
+  background-color: rgb(85, 77, 66);
+  border-radius: 20%;
+  margin: 3px;
+}
+#bean-patty {
+  height: 50px;
+  background-color: rgb(41, 23, 1);
+  border-radius: 20%;
+  margin: 3px;
+}
+#impossible-patty {
+  height: 50px;
+  background-color: rgb(92, 51, 1);
+  border-radius: 20%;
+  margin: 3px;
+}
+#custom-patty {
+  height: 50px;
+  background-color: rgb(193, 133, 108);
+  border-radius: 20%;
+  margin: 3px;
+  border: solid lightgray 0.2vmin;
+  text-align: center;
+  font-size: 2vmin;
+  color: white;
 }
 #bottom-bun {
   height: 50px;
   background-color: tan;
   border-radius: 10% 10% 30% 30%;
   margin: 3px;
+}
+#lettuce-wrap {
+  height: 20px;
+  background-color: lightgreen;
+  border-radius: 30% 30% 30% 30%;
+  margin: 3px;
+}
+#gfbottom-bun {
+  height: 50px;
+  background-color: burlywood;
+  border-radius: 10% 10% 30% 30%;
+  margin: 3px;
+}
+#custombottom-bun {
+  height: 50px;
+  background-color: tan;
+  border-radius: 10% 10% 30% 30%;
+  margin: 3px;
+  text-align: center;
+  font-size: 2vmin;
+  color: white;
 }

@@ -9,7 +9,7 @@ module.exports = {
 
 function deleteIngredient(req, res) {
     Ingredient.findOneAndDelete(
-        {_id: req.params.id}, function(err) {
+        {_id: req.params.id, userId: req.user._id }, function(err) {
             res.redirect('/ingredients/new');
           }
     )

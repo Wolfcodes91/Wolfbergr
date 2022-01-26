@@ -21,18 +21,76 @@
 
     <section class="burger">
     <div class="burger-render">
+      <% if (burger.bun === 'Standard') { %>
       <div id="top-bun"></div>
+      <% } %>
+      <% if (burger.bun === 'Custom') { %>
+      <div id="customtop-bun">??????</div>
+      <% } %>
+      <% if (burger.bun === 'Lettuce Wrap') { %>
+      <div id="lettuce-wrap"></div>
+      <% } %>
+      <% if (burger.bun === 'Gluten-Free') { %>
+      <div id="gftop-bun"></div>
+      <% } %>
+      <% if (burger.sauce !== 'None') { %>
       <% burger.sauce.map(sauce => { %>
       <div class="sauce <%= sauce %>"></div>
       <% }) %>
+      <% } %>
+      <% if (burger.toppings !== 'None') { %>
       <% burger.toppings.map(topping => { %>
       <div class="toppings <%= topping %>"></div>
       <% }) %>
-      <% if (burger.cheese !== 'None') { %>
-      <div id="cheese"></div>
       <% } %>
-      <div id="patty"></div>
+      <% if (burger.cheese === 'Cheddar') { %>
+      <div id="cheddar-cheese"></div>
+      <% } %>
+      <% if (burger.cheese === 'Swiss') { %>
+      <div id="swiss-cheese"></div>
+      <% } %>
+      <% if (burger.cheese === 'Pepper Jack') { %>
+      <div id="jack-cheese"></div>
+      <% } %>
+      <% if (burger.cheese === 'Bleu') { %>
+      <div id="bleu-cheese"></div>
+      <% } %>
+      <% if (burger.cheese === 'American') { %>
+      <div id="american-cheese"></div>
+      <% } %>
+      <% if (burger.cheese === 'Custom') { %>
+      <div id="custom-cheese">??????</div>
+      <% } %>
+      <% if (burger.patty === 'Beef') { %>
+      <div id="beef-patty"></div>
+      <% } %>
+      <% if (burger.patty === 'Chicken') { %>
+      <div id="chicken-patty"></div>
+      <% } %>
+      <% if (burger.patty === 'Veggie') { %>
+      <div id="veggie-patty"></div>
+      <% } %>
+      <% if (burger.patty === 'Black Bean') { %>
+      <div id="bean-patty"></div>
+      <% } %>
+      <% if (burger.patty === 'Impossible') { %>
+      <div id="impossible-patty"></div>
+      <% } %>
+      <% if (burger.patty === 'Custom') { %>
+      <div id="custom-patty">??????</div>
+      <% } %>
+      <% if (burger.bun === 'Standard') { %>
       <div id="bottom-bun"></div>
+      <% } %>
+      <% if (burger.bun === 'Lettuce Wrap') { %>
+      <div id="lettuce-wrap"></div>
+      <% } %>
+      <% if (burger.bun === 'Gluten-Free') { %>
+      <div id="gfbottom-bun"></div>
+      <% } %>
+      <% if (burger.bun === 'Custom') { %>
+      <div id="custombottom-bun">??????</div>
+      <% } %>
     </div>
     </section>
 

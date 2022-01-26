@@ -50,7 +50,7 @@ function create(req, res) {
 
 function deleteBurger(req, res) {
     Burger.findOneAndDelete(
-        { _id: req.params.id }, function (err) {
+        { _id: req.params.id, userId: req.user._id }, function (err) {
             res.redirect('/burgers/');
         }
     )
