@@ -120,33 +120,86 @@ a:hover {
 .add-review-button:hover {
   background-color: lightgreen;
 }
+.burger {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 .burger-render {
-  display: grid;
-  grid-template-rows: 60px 5px 10px 15px 50px 60px;
-  grid-template-columns: 35%;
+  height: 500px;
+  width: 50%;
   row-gap: 10px;
-  justify-content: center;
   margin: 5vmin;
 }
 #top-bun {
+  height: 70px;
   background-color: tan;
-  border-radius: 50% 50% 5% 5%;
+  border-radius: 60% 60% 10% 10%;
+  margin: 3px;
 }
-#sauce {
+.sauce {
+  height: 4px;
+  margin: 3px;
+}
+.Ketchup {
+  background-color: tomato;
+}
+.Mustard {
+  background-color: gold;
+}
+.Mayonaise {
+  background-color: white;
+}
+.Thousand-Island {
   background-color: orange;
 }
-#toppings {
-  background-color: red;
+.Sriracha {
+  background-color: crimson;
+}
+.Hot-Sauce {
+  background-color: darkred;
+}
+.BBQ {
+  background-color: brown;
+}
+.toppings {
+  height: 12px;
+  margin: 3px;
+}
+.Lettuce {
+  background-color: lightgreen;
+}
+.Tomatoes {
+  background-color: tomato;
+}
+.Raw-Onions {
+  background-color: whitesmoke;
+  border: solid 1px lightgray
+}
+.Grilled-Onions {
+  background-color: lightgray;
+}
+.Pickles {
+  background-color: green;
+}
+.Bacon {
+  background-color: brown;
 }
 #cheese {
-  background-color: yellow;
+  height: 15px;
+  background-color: gold;
+  margin: 3px;
 }
 #patty {
+  height: 50px;
   background-color: brown;
-  border-radius: 10%;
+  border-radius: 20%;
+  margin: 3px;
 }
 #bottom-bun {
+  height: 50px;
   background-color: tan;
-  border-radius: 5% 5% 25% 25%;
+  border-radius: 10% 10% 30% 30%;
+  margin: 3px;
 }

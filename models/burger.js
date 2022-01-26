@@ -40,12 +40,12 @@ const burgerSchema = new Schema({
     },
     sauce: {
         type: [String],
-        enum: ['None', ' Ketchup', ' Mustard', ' Mayonaise', ' Thousand Island', ' Sriracha', ' Hot Sauce', ' BBQ'],
+        enum: ['None', ' Ketchup', ' Mustard', ' Mayonaise', ' Thousand-Island', ' Sriracha', ' Hot-Sauce', ' BBQ'],
         default: ['None'],
     },
     toppings: {
         type: [String],
-        enum: ['None', ' Lettuce', ' Tomatoes', ' Raw Onions', ' Grilled Onions', ' Pickles', ' Bacon'],
+        enum: ['None', ' Lettuce', ' Tomatoes', ' Raw-Onions', ' Grilled-Onions', ' Pickles', ' Bacon'],
         default: ['None'],
     },
     ingredients: [{

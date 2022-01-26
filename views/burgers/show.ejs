@@ -18,14 +18,23 @@
         <% } %>
     </div> 
     </section>
+
+    <section class="burger">
     <div class="burger-render">
       <div id="top-bun"></div>
-      <div id="sauce"></div>
-      <div id="toppings"></div>
+      <% burger.sauce.map(sauce => { %>
+      <div class="sauce <%= sauce %>"></div>
+      <% }) %>
+      <% burger.toppings.map(topping => { %>
+      <div class="toppings <%= topping %>"></div>
+      <% }) %>
+      <% if (burger.cheese !== 'None') { %>
       <div id="cheese"></div>
+      <% } %>
       <div id="patty"></div>
       <div id="bottom-bun"></div>
     </div>
+    </section>
 
     <br><br>
     <% if (user) { %>
