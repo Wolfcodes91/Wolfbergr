@@ -248,12 +248,12 @@ a:hover {
 }
 #beef-patty {
   height: 5vmin;
-  background-image: radial-gradient(whitesmoke 7%, transparent 8%),
+  background-image: radial-gradient(whitesmoke 12%, transparent 8%),
   radial-gradient(whitesmoke 7%, transparent 10%);
   background-color: brown;
   border-radius: 20% 20% 10% 10%;
   background-position: 0 0 , 50px 50px;
-  background-size: 80px 100px;
+  background-size: 90px 100px;
   margin: 3px;
 }
 #chicken-patty {
@@ -288,7 +288,7 @@ a:hover {
 }
 #impossible-patty {
   height: 5vmin;
-  background-image: radial-gradient(whitesmoke 7%, transparent 8%),
+  background-image: radial-gradient(whitesmoke 12%, transparent 8%),
   radial-gradient(whitesmoke 7%, transparent 10%);
   background-color: rgb(92, 51, 1);
   border-radius: 23% 23% 10% 10%;
@@ -298,7 +298,7 @@ a:hover {
 }
 #custom-patty {
   height: 5vmin;
-  background-image: radial-gradient(whitesmoke 7%, transparent 8%),
+  background-image: radial-gradient(whitesmoke 12%, transparent 8%),
   radial-gradient(whitesmoke 7%, transparent 10%);
   background-color: rgb(193, 133, 108);
   border-radius: 23% 23% 10% 10%;
