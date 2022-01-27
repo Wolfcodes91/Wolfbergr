@@ -1,6 +1,7 @@
 # WOLFBERGR
 
 ## [WOLFBERGR](https://wolfbergr.herokuapp.com/)
+## [WOLFBERGR-TRELLO-BOARD](https://trello.com/b/X2qLVHJ3/wolfbergr)
 
 ### Info
 WOLFBERGR is an interactive online burger building experience.
@@ -19,7 +20,7 @@ View and Review your burgers by clicking "details" on the "All Burgers" page.
  ![Add Ingredient](https://i.imgur.com/w6Vv4hp.png)
  ![Burger Details](https://i.imgur.com/uvz4Si6.png)
 
-### Languages and Frameworks used:
+### Technologies used:
     * node 
     * express
     * mongo db
