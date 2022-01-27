@@ -1,6 +1,6 @@
 <%- include('../partials/header') %>
 
-    <form id="new-form" action="/burgers" method="POST">
+    <form id="new-form" action="/burgers" autocomplete="off" method="POST">
         <label>Name:</label>
         <input type="text" name="name">
         <label>Bun: </label>
@@ -38,6 +38,7 @@
             <option value="Custom">Custom</option>
         </select>
         <br>
+        <div class="sauce-box">
         <label for="sauce">Sauce:</label>
         <input id="sauce" type="checkbox" name="sauce" value=" Ketchup">Ketchup
         <input id="sauce" type="checkbox" name="sauce" value=" Mustard">Mustard
@@ -46,9 +47,9 @@
         <input id="sauce" type="checkbox" name="sauce" value=" Sriracha">Sriracha
         <input id="sauce" type="checkbox" name="sauce" value=" Hot-Sauce">Hot-Sauce
         <input id="sauce" type="checkbox" name="sauce" value=" BBQ">BBQ
-
+        </div>
         <br>
-
+        <div class="toppings-box">
         <label>Toppings:</label>
         <input id="toppings" type="checkbox" name="toppings" value=" Lettuce">Lettuce
         <input id="toppings" type="checkbox" name="toppings" value=" Tomatoes">Tomatoes
@@ -57,7 +58,7 @@
         <input id="toppings" type="checkbox" name="toppings" value=" Pickles">Pickles
         <input id="toppings" type="checkbox" name="toppings" value=" Bacon">Bacon
         </select>
-
+        </div>
         <br>
         <div id="cust-ing-form">
         <label>Custom Ingredient:</label>

@@ -22,7 +22,7 @@ a {
   color: #ff0019;
 }
 a:hover {
-  color: darkblue
+  color: gold;
 }
 .login {
   display: flex;
@@ -40,6 +40,21 @@ a:hover {
   justify-content: space-between;
   align-items: center;
 }
+#new-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 25px;
+  font-size: 20px;
+}
+.sauce-box, .toppings-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 #list {
   display: flex;
   flex-direction: column;
@@ -56,7 +71,7 @@ a:hover {
 }
 
 .badge, .badgeButton, .badgeButton2 {
-  background-color: burlywood;
+  background-color: rgb(135, 170, 222);
   padding: .5rem;
   margin: .5rem .5rem 0 .5rem;
   border-radius: .3rem;
@@ -67,10 +82,15 @@ a:hover {
 
 .badgeButton, .badgeButton2 {
   background-color: lightgray;
+  padding: 5px;
 }
 
 .badgeButton:hover {
   background-color: red;
+  padding: 8px;
+}
+#review-number {
+  font-size: 25px;
 }
 
 .badge2 {
@@ -83,9 +103,10 @@ a:hover {
 
 .badgeButton2:hover {
   background-color: lightgreen;
+  padding: 8px;
 }
 
-#new-form, #show-page {
+#show-page {
   padding: .5rem;
   margin: .5rem .5rem 0 .5rem;
   border-radius: .3rem;
@@ -97,30 +118,43 @@ a:hover {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
-.review-user, #add-review-form, #reviews-empty {
+ #add-review-form, #reviews-empty {
   padding: 1vmin;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
   right: 2px;
+  width: 100%;
+  gap: 2px;
 }
-.edit-review-button, .delete-review-button, .add-review-button {
-  padding: 0.5vmin;
-  border-radius: 10%;
+.review-user-table {
+  padding: 1vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  right: 1px;
+  width: 100%;
 }
 
-.edit-review-button:hover {
-  background-color: goldenrod;
+.delete-review-button, .add-review-button {
+  padding: 5px;
+  border-radius: 10%;
+  width: 100%;
+  margin: 2px;
 }
 
 .delete-review-button:hover {
   background-color: red;
+  padding: 7px;
 }
 
 .add-review-button:hover {
   background-color: lightgreen;
+  padding: 9px;
 }
 .burger {
   width: 500px;
