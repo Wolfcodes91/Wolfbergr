@@ -201,6 +201,16 @@ a:hover {
   background-size: 87px 80px;
   margin: 3px;
 }
+#lettuce-wrap-top {
+  height: 33px;
+  background-image:  radial-gradient(rgb(36, 36, 36)  59%, transparent 38%),
+  radial-gradient(rgb(36, 36, 36)  30%, transparent 30%);
+  background-color: rgb(103, 196, 103);
+  border-radius: 50% 55% 40% 16%;
+  background-position: 47px 18px , 87px 89px;
+  background-size: 83px 100px;
+  margin: 3px;
+}
 #customtop-bun {
   height: 70px;
   background-color: tan;
@@ -249,7 +259,7 @@ a:hover {
   background-image: radial-gradient(rgb(28, 28, 28)  62%, transparent 28%),
   radial-gradient(rgb(28, 28, 28)  43%, transparent 30%);
   background-color: rgb(103, 196, 103);
-  border-radius: 29% 10% 23% 18%;
+  border-radius: 49% 40% 43% 48%;
   background-position: 60px 12px , 80px 89px;
   background-size: 105px 100px;
 }
@@ -415,14 +425,14 @@ a:hover {
   border-radius: 10% 10% 30% 30%;
   margin: 3px;
 }
-#lettuce-wrap {
-  height: 30px;
-  background-image: radial-gradient(rgb(28, 28, 28)  65%, transparent 28%),
-  radial-gradient(rgb(28, 28, 28)  37%, transparent 30%);
+#lettuce-wrap-bottom {
+  height: 44px;
+  background-image: radial-gradient(rgb(42, 42, 42)  65%, transparent 28%),
+  radial-gradient(rgb(42, 42, 42)  37%, transparent 30%);
   background-color: rgb(103, 196, 103);
-  border-radius: 39% 10% 33% 18%;
+  border-radius: 49% 30% 33% 48%;
   background-position: 50px 12px , 80px 89px;
-  background-size: 105px 100px;
+  background-size: 85px 100px;
   margin: 3px;
 }
 #gfbottom-bun {
