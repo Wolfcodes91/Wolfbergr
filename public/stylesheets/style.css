@@ -226,7 +226,7 @@ a:hover {
   border-radius: 60% 60% 10% 10%;
   margin: 3px;
   text-align: center;
-  font-size: 2vmin;
+  font-size: 40px;
   color: white;
 }
 
@@ -362,8 +362,8 @@ a:hover {
   margin: 3px;
   border-radius: 65% 47% 3% 5%;
   text-align: center;
-  font-size: 1.5vmin;
-  color: brown;
+  font-size: 12px;
+  color: black;
 }
 #beef-patty {
   height: 50px;
@@ -425,8 +425,8 @@ a:hover {
   background-position: 0 0, 50px 50px;
   background-size: 80px 100px;
   text-align: center;
-  font-size: 3.5vmin;
-  color: brown;
+  font-size: 35px;
+  color: white;
 }
 #bottom-bun {
   height: 50px;
@@ -456,7 +456,7 @@ a:hover {
   border-radius: 10% 10% 30% 30%;
   margin: 3px;
   text-align: center;
-  font-size: 2vmin;
+  font-size: 30px;
   color: white;
 }
 
