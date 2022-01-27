@@ -212,29 +212,34 @@ a:hover {
 }
 
 .sauce {
-  height: 4px;
+  height: 5px;
   margin: 3px;
+  border-radius: 40%;
+  background-image: radial-gradient(rgb(28, 28, 28) 48%, transparent 45%),
+  radial-gradient(rgb(28, 28, 28) 60%, transparent 53%);
+  background-position: 23px 18px , 10px 96px;
+  background-size: 20px 100px;
 }
 .Ketchup {
-  background-color: tomato;
+  background-color: rgb(242, 73, 43);
 }
 .Mustard {
-  background-color: gold;
+  background-color: rgb(255, 215, 54);
 }
 .Mayonaise {
-  background-color: white;
+  background-color: rgb(251, 237, 195);
 }
 .Thousand-Island {
-  background-color: orange;
+  background-color: rgb(254, 199, 104);
 }
 .Sriracha {
-  background-color: crimson;
+  background-color: rgb(220, 57, 20);
 }
 .Hot-Sauce {
-  background-color: darkred;
+  background-color: rgb(155, 22, 7);
 }
 .BBQ {
-  background-color: brown;
+  background-color: rgb(93, 23, 15);
 }
 .toppings {
   height: 12px;
