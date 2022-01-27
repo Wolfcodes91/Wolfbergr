@@ -8,9 +8,9 @@
     </thead>
     <tbody>
       <% burgers.forEach(function(b) { %>
-        <tr>
-          <td class="burger-user"><img alt="avatar" src="<%= b.userAvatar %>"><%= b.userName %></td>
-          <td><%= b.createdAt %></td>
+        <tr class="burger-user">
+          <td ><img alt="avatar" src="<%= b.userAvatar %>"><%= b.userName %></td>
+          <td><%= b.createdAt.toLocaleDateString() %></td>
           <td><%= b.name %></td>
           <td><a href="/burgers/<%= b._id %>">Details</a></td>
         <td>   
