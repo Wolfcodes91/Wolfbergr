@@ -10,9 +10,12 @@ nav {
   background-color: rgb(200, 187, 161);
   padding: 1vmin;
   border-radius: 10%;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+#navbar-burger {
+  width: 50px;
 }
 #wolfbergr-box {
   display: flex;

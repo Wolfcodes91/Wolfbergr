@@ -10,6 +10,7 @@
 </head>
 <body> 
     <nav>
+    <img id="navbar-burger" src="/images/LOGOBERGR.png">
     <a href="/">Home</a>
     <a href="/burgers" <%- title === 'All Burgers' ? 'class="active"' : '' %>>All Burgers</a>
     <% if (user) { %>
@@ -19,6 +20,7 @@
      <% } else { %>
         <a href="/auth/google" class="login">LOG IN&nbsp;<img src="https://i.imgur.com/FHjYyi0.png"></a>
     <% } %>
+    <img id="navbar-burger" src="/images/LOGOBERGR.png">
     </nav>
     <main>
     <h1><%- title %></h1>
