@@ -13,6 +13,13 @@ nav {
   align-items: center;
   flex-wrap: wrap;
 }
+#explanation, #welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 12px;
+}
 h1, h2 {
   display: flex;
   justify-content: center;
@@ -47,7 +54,7 @@ a:hover {
   align-items: center;
   gap: 5px;
   padding: 25px;
-  font-size: 20px;
+  font-size: 14px;
 }
 .sauce-box, .toppings-box {
   display: flex;
