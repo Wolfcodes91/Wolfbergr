@@ -18,7 +18,7 @@
         <% } %>
     </div> 
     </section>
-
+  <div class="something">
     <section class="burger">
     <div class="burger-render">
       <% if (burger.bun === 'Standard') { %>
@@ -94,6 +94,7 @@
     </div>
     </section>
 
+    <div>
     <br><br>
     <% if (user) { %>
       <form id="add-review-form" method="POST"
@@ -153,6 +154,6 @@
     <% } else { %>
       <h5 id="reviews-empty">No Reviews Yet</h5>
     <% } %>
-
-  
+    </div>
+  </div>
 <%- include('../partials/footer') %>

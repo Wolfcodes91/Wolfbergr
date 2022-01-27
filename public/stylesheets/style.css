@@ -1,7 +1,8 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: grey;
+  background-color: rgb(26, 23, 23);
+  color: white;
 }
 nav {
   display: flex;
@@ -103,7 +104,7 @@ a:hover {
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  position: relative;
+  right: 2px;
 }
 .edit-review-button, .delete-review-button, .add-review-button {
   padding: 0.5vmin;
@@ -122,21 +123,25 @@ a:hover {
   background-color: lightgreen;
 }
 .burger {
-  width: 100%;
+  width: 500px;
+  height: 500px;
   display: flex;
   justify-content: flex-start;
-  position: absolute;
+  align-items: flex-end;
   flex-wrap: wrap;
+  background-image: url(../images/TableBlack.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 75%;
 }
 
 .burger-render {
-  height: 50vmin;
-  width: 50%;
-  row-gap: 1vmin;
-  margin: 5vmin;
+  height: 100%;
+  width: 400px;
+  row-gap: 10px;
+  margin: 50px;
 }
 #top-bun {
-  height: 8.5vmin;
+  height: 70px;
   background-image: radial-gradient(whitesmoke 5%, transparent 5%),
   radial-gradient(whitesmoke 5%, transparent 5%);
   background-color: tan;
@@ -146,7 +151,7 @@ a:hover {
   margin: 3px;
 }
 #gftop-bun {
-  height: 8.5vmin;
+  height: 70px;
   background-image: radial-gradient(white 5%, transparent 5%),
   radial-gradient(black 5%, transparent 5%);
   background-color: burlywood;
@@ -156,7 +161,7 @@ a:hover {
   margin: 3px;
 }
 #customtop-bun {
-  height: 8.5vmin;
+  height: 70px;
   background-color: tan;
   border-radius: 60% 60% 10% 10%;
   margin: 3px;
@@ -195,7 +200,12 @@ a:hover {
   margin: 3px;
 }
 .Lettuce {
-  background-color: lightgreen;
+  background-color: rgb(71, 205, 71);
+  background-image: radial-gradient(black  5%, transparent 8%),
+  radial-gradient(black  5%, transparent 10%);
+  border-radius: 29% 20% 33% 18%;
+  background-position: 0 0, 50px 50px;
+  background-size: 25px 100px;
 }
 .Tomatoes {
   background-color: tomato;
@@ -214,15 +224,15 @@ a:hover {
   background-color: brown;
 }
 #cheddar-cheese {
-  height: 1.8vmin;
+  height: 15px;
   background-color: rgb(242, 192, 66);
   border-radius: 65% 47% 3% 5%;
   margin: 3px;
 }
 #swiss-cheese {
-  height: 1.8vmin;
-  background-image: radial-gradient(grey 55%, transparent 10%),
-  radial-gradient(grey 13%, transparent 13%);
+  height: 15px;
+  background-image: radial-gradient(black 55%, transparent 10%),
+  radial-gradient(black 13%, transparent 13%);
   background-color: rgb(245, 242, 221);
   background-position: 0 0 , 50px 50px;
   background-size: 100px 100px;
@@ -231,7 +241,7 @@ a:hover {
   margin: 3px;
 }
 #jack-cheese {
-  height: 1.8vmin;
+  height: 15px;
   background-image: radial-gradient(rgb(249, 3, 3) 51%, transparent 50%),
   radial-gradient(rgb(50, 171, 17) 9%, transparent 19%);
   background-color: rgb(238, 237, 181);
@@ -241,7 +251,7 @@ a:hover {
   margin: 3px;
 }
 #bleu-cheese {
-  height: 1.8vmin;
+  height: 15px;
   background-image: radial-gradient(lightskyblue 35%, transparent 65%),
   radial-gradient(rgb(237, 235, 223) 12%, transparent 59%);
   background-color: white;
@@ -251,13 +261,13 @@ a:hover {
   margin: 3px;
 }
 #american-cheese {
-  height: 1.8vmin;
+  height: 15px;
   background-color: rgb(247, 201, 18);
   border-radius: 65% 47% 3% 5%;
   margin: 3px;
 }
 #custom-cheese {
-  height: 1.8vmin;
+  height: 15px;
   background-color: rgb(234, 220, 146);
   margin: 3px;
   border-radius: 65% 47% 3% 5%;
@@ -266,9 +276,9 @@ a:hover {
   color: brown;
 }
 #beef-patty {
-  height: 5vmin;
-  background-image: radial-gradient(grey 12%, transparent 8%),
-  radial-gradient(grey 7%, transparent 10%);
+  height: 50px;
+  background-image: radial-gradient(black 12%, transparent 8%),
+  radial-gradient(black 7%, transparent 10%);
   background-color: brown;
   border-radius: 20% 20% 10% 10%;
   background-position: 0 0 , 50px 50px;
@@ -276,17 +286,17 @@ a:hover {
   margin: 3px;
 }
 #chicken-patty {
-  height: 5.5vmin;
-  background-image: radial-gradient(grey  11%, transparent 16%),
-  radial-gradient(grey  14%, transparent 14%);
+  height: 50px;
+  background-image: radial-gradient(black 11%, transparent 26%),
+  radial-gradient(black 14%, transparent 14%);
   background-color: rgb(150, 84, 4);
   border-radius: 27% 33% 24% 7%;
   background-position: 0 0 , 50px 50px;
-  background-size: 64px 100px;
+  background-size: 74px 100px;
   margin: 3px;
 }
 #veggie-patty {
-  height: 5vmin;
+  height: 50px;
   background-image: radial-gradient(#cb5b16 12%, transparent 34%),
   radial-gradient(#488a05 9%, transparent 30%);
   background-color: rgb(147, 105, 47);
@@ -296,7 +306,7 @@ a:hover {
   margin: 3px;
 }
 #bean-patty {
-  height: 5vmin;
+  height: 50px;
   border-radius: 23% 23% 10% 10%;
   margin: 3px;
   background-image: radial-gradient(#212121 22%, transparent 33%),
@@ -306,9 +316,9 @@ a:hover {
   background-size: 85px 100px;
 }
 #impossible-patty {
-  height: 5vmin;
-  background-image: radial-gradient(grey  12%, transparent 8%),
-  radial-gradient(grey  7%, transparent 10%);
+  height: 50px;
+  background-image: radial-gradient(black  12%, transparent 8%),
+  radial-gradient(black  7%, transparent 10%);
   background-color: rgb(92, 51, 1);
   border-radius: 23% 23% 10% 10%;
   margin: 3px;
@@ -316,9 +326,9 @@ a:hover {
   background-size: 80px 100px;
 }
 #custom-patty {
-  height: 5vmin;
-  background-image: radial-gradient(grey  12%, transparent 8%),
-  radial-gradient(grey  7%, transparent 10%);
+  height: 50px;
+  background-image: radial-gradient(black  12%, transparent 8%),
+  radial-gradient(black 7%, transparent 10%);
   background-color: rgb(193, 133, 108);
   border-radius: 23% 23% 10% 10%;
   margin: 3px;
@@ -329,33 +339,39 @@ a:hover {
   color: brown;
 }
 #bottom-bun {
-  height: 5vmin;
+  height: 50px;
   background-color: tan;
   border-radius: 10% 10% 30% 30%;
   margin: 3px;
 }
 #lettuce-wrap {
-  height: 2vmin;
-  background-image: radial-gradient(grey  5%, transparent 8%),
-  radial-gradient(grey  5%, transparent 10%);
-  background-color: lightgreen;
+  height: 20px;
+  background-image: radial-gradient(black  5%, transparent 8%),
+  radial-gradient(black  5%, transparent 10%);
+  background-color: rgb(71, 205, 71);
   border-radius: 29% 20% 33% 18%;
   background-position: 0 0, 50px 50px;
   background-size: 25px 100px;
   margin: 3px;
 }
 #gfbottom-bun {
-  height: 5vmin;
+  height: 40px;
   background-color: burlywood;
   border-radius: 10% 10% 30% 30%;
   margin: 3px;
 }
 #custombottom-bun {
-  height: 5vmin;
+  height: 40px;
   background-color: tan;
   border-radius: 10% 10% 30% 30%;
   margin: 3px;
   text-align: center;
   font-size: 2vmin;
   color: white;
+}
+
+.something {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
