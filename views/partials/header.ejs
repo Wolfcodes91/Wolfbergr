@@ -14,7 +14,7 @@
     <a href="/">Home</a>
     <a href="/burgers" <%- title === 'All Burgers' ? 'class="active"' : '' %>>All Burgers</a>
     <% if (user) { %>
-        <a href="/burgers/new" <%- title === 'Add Burger' ? 'class="active"' : '' %>>Add Burger</a>
+        <a href="/burgers/new" <%- title === 'Create Burger' ? 'class="active"' : '' %>>Create Burger</a>
         <a href="/ingredients/new" <%- title === 'Add Indgredients' ? 'class="active"' : '' %>>Add Ingredients</a>
         <a href="/logout">LOG OUT</a>
      <% } else { %>
