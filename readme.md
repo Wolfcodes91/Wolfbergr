@@ -15,10 +15,10 @@ Create your burger using the selection menus on the "Create Burger" page.
 Add custom ingredients by typing in the ingredient and its position on the "Add Ingredients" page.
 View and Review your burgers by clicking "details" on the "All Burgers" page.
 
- ![Home Screen](https://i.imgur.com/ZveZf9v.png)
+ ![Home Screen](https://i.imgur.com/cQnyO1h.png)
  ![Create Burger](https://i.imgur.com/iCJDq0q.png)
  ![Add Ingredient](https://i.imgur.com/C98UCyC.png)
- ![Burger Details](https://i.imgur.com/uvz4Si6.png)
+ ![Burger Details](https://i.imgur.com/031ofmt.png)
 
 ### Technologies used:
     * node 
