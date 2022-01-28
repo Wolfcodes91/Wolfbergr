@@ -1,6 +1,6 @@
 # WOLFBERGR
 
-## Getting Started
+### Getting Started
 ## [WOLFBERGR](https://wolfbergr.herokuapp.com/)
 ## [WOLFBERGR-TRELLO-BOARD](https://trello.com/b/X2qLVHJ3/wolfbergr)
 
