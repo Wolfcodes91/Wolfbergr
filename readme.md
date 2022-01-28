@@ -29,7 +29,8 @@ View and Review your burgers by clicking "details" on the "All Burgers" page.
     * javascript
 
 ### Icebox Items: 
-
+    * Sort Existing burgers from newest to oldest, alphabetically, etc 
+    * Media Query for mobile users
     * Ability to edit existing burgers
     * More ingredients
     * More realistic ingredient rendering
