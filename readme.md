@@ -16,8 +16,8 @@ Add custom ingredients by typing in the ingredient and its position on the "Add 
 View and Review your burgers by clicking "details" on the "All Burgers" page.
 
  ![Home Screen](https://i.imgur.com/ZveZf9v.png)
- ![Create Burger](https://i.imgur.com/O23HYWS.png)
- ![Add Ingredient](https://i.imgur.com/w6Vv4hp.png)
+ ![Create Burger](https://i.imgur.com/iCJDq0q.png)
+ ![Add Ingredient](https://i.imgur.com/C98UCyC.png)
  ![Burger Details](https://i.imgur.com/uvz4Si6.png)
 
 ### Technologies used:
